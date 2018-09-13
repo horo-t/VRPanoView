@@ -1,0 +1,13 @@
+#!/bin/bash
+
+mkdir -p out/js
+
+rm -rf third_party
+
+mkdir -p third_party/closure-compiler
+
+curl http://dl.google.com/closure-compiler/compiler-20180805.tar.gz \
+    -o third_party/closure-compiler/compiler-20180805.tar.gz
+
+tar xzvf third_party/closure-compiler/compiler-20180805.tar.gz \
+    -C third_party/closure-compiler/
